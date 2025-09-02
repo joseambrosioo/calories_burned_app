@@ -82,12 +82,12 @@ app.layout = html.Div(
             "Lower values for MAE, MSE, and RMSE indicate better performance, while a higher R-squared score is better."
         ),
         html.P(
+            "The **Mean Absolute Error (MAE)** measures the average magnitude of the errors, and the **R-squared Score (R²)** measures the proportion of variance explained by the model."
+        ),
+        html.P(
             "The **Mean Squared Error (MSE)** is the average of the squared errors, giving more weight to larger errors. "
             "The **Root Mean Squared Error (RMSE)** is the square root of the MSE, which is useful because the units are the same as the target variable (Calories).",
             style={'text-align': 'justify'}
-        ),
-        html.P(
-            "The **Mean Absolute Error (MAE)** measures the average magnitude of the errors, and the **R-squared Score (R²)** measures the proportion of variance explained by the model."
         ),
 
         html.Div([
