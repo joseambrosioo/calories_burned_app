@@ -188,6 +188,10 @@ def update_model_info(_):
 
     return table, mae_fig, r2_fig, mse_fig, rmse_fig
 
+
+server = app.server # This exposes the Flask server object to Gunicorn
+
+
 # Run the app
 if __name__ == '__main__':
     app.run(debug=True, port=8050)
